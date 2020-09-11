@@ -1,0 +1,156 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#icon {
+    background: url(../content/icon_search.svg) no-repeat center;
+    width: 15px;
+    height: 15px;
+}
+
+#logo {
+    padding-top: 100px;
+    text-align: center;
+}
+
+table tbody:hover {
+    cursor: pointer;
+}
+
+input#dateSearch {
+    background-image: url(../content/icon_calender.svg);
+    background-position: left;
+    background-position-x: 10px;
+    background-size: 25px;
+    background-Repeat: no-repeat;
+    cursor: pointer;
+    text-align: center;
+	max-width: 270px;
+	padding-right: 0px;
+}
+
+#result {
+	font-weight: bold;
+	color: gray;
+}
+
+.clip {
+    width: 15px;
+}
+
+.mailIcon {
+    display: none;
+}
+
+.column {
+  padding: 5px;
+  border-bottom: 1px solid #D8D8D8;
+  margin-left: 15px;
+}
+
+.head1 {
+	border-top: 1px solid #E8E8E8;
+	background-color: #E8E8E8;
+	font-weight: bold;
+	color: #606060;
+}
+
+label:nth-of-type(5) {
+	width: 500px;
+}
+
+label:nth-of-type(2) {
+	width: 160px;
+}
+
+label:nth-of-type(4) {
+	width: 200px;
+}
+
+.ranDate, .attach, .dateField {
+	float: right;
+	width: 60px;
+}
+
+.dateField {
+	color: black;
+}
+
+.ranDate {
+	font-weight: bold;
+}
+
+.arrw {
+	display: none;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .mailIcon {
+    display: inline-block;
+    width: 15px;
+    float: left;
+    padding-top: 13px;
+    margin-right: 10px;
+  }
+  
+  .attach {
+	padding-left: 35px;
+  }
+  .ranDate {
+	margin-right: 0px;
+	width: 60px;
+  }
+  
+  .arrw {
+    display: inline;
+    width: 5px;
+    float: right;
+    padding-top: 8px;
+  }
+  
+  label:nth-of-type(5) {
+	width: 400px; 
+  }
+  
+  label:nth-of-type(2) {
+	font-weight: bold;
+	font-size: 14px;
+  }
+  
+  .l1 {
+    display: table-cell;
+    margin-right: 75px;
+    border-right: 1px solid gray;
+    text-align: center;
+  }
+  
+  .dateField {
+	text-align: center;
+  }
+  
+  .attach.li {
+	display: none;
+  }
+  
+  label:nth-of-type(4) {
+	font-size: 14px;
+  }
+  
+  .row {
+    display: inline-block;
+  }
+  
+  .column {
+	margin-left: 0px;
+  }
+  
+  .dateField {
+	color: #606060;
+  }
+  
+  .head1 {
+	color: black;
+  }
+}
